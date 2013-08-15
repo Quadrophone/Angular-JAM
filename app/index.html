@@ -1,0 +1,65 @@
+    <html ng-app>
+    <head>
+    <title>Angular JAM</title>
+  <meta name="author" content="James Podles">
+   <meta name="description" content="A searchable database of BBC Radio's 'Just a Minute' episodes.">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+     <link rel="stylesheet" href="css/app.css"/>
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/controllers.js"></script>
+    </head>
+
+
+    <body ng-controller="EpisodeControl">
+
+  
+<header>
+
+<h1 >Angular JAM</h1>
+<h2 >Search episodes of BBC Radio's 'Just a Minute' by subject, guest, and date.</h2>
+</header>
+  <div class="container">
+  <div class="wrap">
+    <div class="sidebar">
+     <div class="search">
+
+      <span class="search">Search:</span><input ng-model="query">
+
+    </div>
+</div>
+
+
+    <div class="results">
+    <ul class"results"> 
+    <div class="episode" ng-repeat="episode in episodes | filter:query">
+    <p><span class="cat">Air Date:</span> {{episode.date}}</p>
+    <p><span class="cat">Series:</span> {{episode.series}}</p>
+    <p><span class="cat">Series Episode:</span> {{episode.seriesno}}</p>
+    <p><span class="cat">Overall Episode:</span> {{episode.overallno}}</p>
+    <p><span class="cat">Host:</span> {{episode.host}}</p>
+    <p><span class="cat">Subject:</span> {{episode.subject}}</p>
+      <p><span class="cat">Guests:</span> {{episode.guests}}</p>
+     </div>
+
+    </ul>
+    </div>
+</div>
+    <div class="instructions">
+    <p class="instructions">
+    Type in the name of a guest or a show subject to find the episodes' air dates and episode numbers. More functions coming soon.
+    </p>
+
+    </div>
+    </div>
+       <script src="lib/angular/angular.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/services.js"></script>
+  <script src="js/controllers.js"></script>
+  <script src="js/filters.js"></script>
+  <script src="js/directives.js"></script>
+</body>
+</html>
+
+    </body>
+    </html>

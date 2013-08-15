@@ -1,0 +1,131 @@
+body, html {
+  height:100%;
+  width:100%;
+  margin:0;
+  padding:0;
+  min-height:100%;
+font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+  background-image:url('../img/lclinen.png');
+}
+.container {
+  background-color: rgba(255,255,255,.7);
+  width:77%;
+  height:100%;
+  margin:auto;
+  margin-top:0; 
+}
+
+input {
+  margin:auto;
+  display: block;
+  height:35px;
+  font-size: 15px;
+}
+header {
+  background-image:url('../img/watch.jpg');
+  background-size:100%;
+  height: 450px;
+  width:100%;
+  color:black;
+  margin-bottom:0;
+  border-bottom: 1px solid #555;
+}
+h1 {
+  font-size: 4em;
+  margin-top:0;
+padding-top:7%;
+}
+h2 {
+ 
+  font-size:2em;
+  width:58%;
+  margin-left:auto;
+  margin-right: auto;
+}
+h1, h2 {
+    text-align: center;
+
+}
+div.sidebar {
+  width:30%;
+  float:left;
+
+}
+
+div.search {
+  background-color:rgb(122,122,122);
+  height:150px;
+  margin-top:50%;
+  margin-left:auto;
+  width:85%;
+  -webkit-box-shadow: 2px 2px 2px rgba(50, 50, 50, 0.49);
+-moz-box-shadow:    2px 2px 2px rgba(50, 50, 50, 0.49);
+box-shadow:         2px 2px 2px rgba(50, 50, 50, 0.49);
+}
+
+span.search {
+  margin-top:8%;
+  margin-bottom:5%;
+  font-size:23px;
+  display:inline-block;
+  width:100%;
+  text-align: center;
+}
+
+div.results {
+  width:65%;
+  height:100%;
+  float:right;
+   overflow-y:scroll;
+  overflow-x:hidden;
+}
+
+div.wrap {
+  height:75%;
+}
+
+div.instructions {
+  height:25%;
+  background-color:white;
+}
+
+p.instructions {
+  margin-left:auto;
+  margin-right:auto;
+  text-align:center;
+  font-size:1.5em;
+  width:80%;
+  padding-top:4%;
+}
+
+ul.results li {
+  list-style-type: none;
+
+}
+
+p.ng-binding {
+  margin:0;
+  padding:0;
+}
+
+div.episode {
+  background-color:white;
+  border-radius:2px;
+  width:85%;
+  margin-bottom:1.5em;
+  padding:1em;
+-webkit-box-shadow: 1px 1px 2px rgba(50, 50, 50, 0.49);
+-moz-box-shadow:    1px 1px 2px rgba(50, 50, 50, 0.49);
+box-shadow:         1px 1px 2px rgba(50, 50, 50, 0.49);
+}
+
+span.cat {
+  font-weight: 600;
+}
+
+
+
