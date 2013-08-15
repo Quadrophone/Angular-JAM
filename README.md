@@ -5,7 +5,7 @@ Search an episode database of BBC Radio's "Just a Minute." How many shows has St
 
 Live demo here:
 
-http://quadrophone.github.io/Angular-JAM/
+http://quadrophone.github.io/Angular-JAM/app
 
 
 Mostly an Angular.js learning excerise, so many improvements coming soon.
