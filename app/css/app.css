@@ -19,13 +19,7 @@ body {
   margin-top:0; 
 }
 
-input {
-  margin:auto;
-  display: block;
-  height:35px;
-  font-size: 15px;
-  width:80%;
-}
+
 header {
   background-image:url('../img/watch.jpg');
   background-repeat: no-repeat;
@@ -60,7 +54,9 @@ div.sidebar {
 
 div.search {
   background-color:rgb(122,122,122);
-  height:150px;
+  padding-top:5%;
+  padding-left:5%;
+  height:170px;
   margin-top:50%;
   margin-left:auto;
   width:85%;
@@ -70,12 +66,19 @@ box-shadow:         2px 2px 2px rgba(50, 50, 50, 0.49);
 }
 
 span.search {
-  margin-top:8%;
-  margin-bottom:5%;
-  font-size:23px;
+  margin-top:5%;
+  color:#fff;
   display:inline-block;
-  width:100%;
-  text-align: center;
+  width:20%;
+}
+input:last-of-type {
+  margin-bottom:5%;
+}
+input {
+    display:inline-block;
+  margin-top:5%;
+  margin-right:5%;
+  margin-left:10%;
 }
 
 div.results {
@@ -165,9 +168,7 @@ span.cat {
         padding-top:5%;
         height:20%;
            }
-           span.search {
-            font-size: 1em;
-           }
+          
            div.search {
              margin-right: auto;
              margin-top:0%;
