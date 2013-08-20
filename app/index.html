@@ -24,10 +24,10 @@
     <div class="sidebar">
      <div class="search">
 
-      <span class="search">Host:</span><input ng-model="query.host">
-      <span class="search">Date:</span><input ng-model="query.date">
-      <span class="search">Guest:</span><input ng-model="query.guests">
-      <span class="search">Subject:</span><input ng-model="query.subject">
+  <input type="text" placeholder="Host" ng-model="search.host">
+     <input type="text"placeholder="Date"  ng-model="search.date">
+     <input type="text"placeholder="Guest" ng-model="search.guests">
+ <input type="text" placeholder="Subject" ng-model="search.subject">
      
     </div>
 </div>
@@ -35,15 +35,17 @@
 
     <div class="results">
     <ul class"results"> 
-    <div class="episode" ng-repeat="episode in episodes | filter:query">
+    <div class="episode" ng-repeat="episode in episodes | filter:search">
     <p><span class="cat">Air Date:</span> {{episode.date}}</p>
     <p><span class="cat">Series:</span> {{episode.series}}</p>
     <p><span class="cat">Series Episode:</span> {{episode.seriesno}}</p>
     <p><span class="cat">Overall Episode:</span> {{episode.overallno}}</p>
     <p><span class="cat">Host:</span> {{episode.host}}</p>
     <p><span class="cat">Subject:</span> {{episode.subject}}</p>
-      <p><span class="cat">Guests:</span> {{episode.guests}}</p>
+    <div ng-repeat="guests in episode.guests | filter:search.guests" >
+      <p><span class="cat" >Guest:</span> {{guests}}</p>
      </div>
+      </div>
 
     </ul>
     </div>
